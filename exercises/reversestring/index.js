@@ -10,6 +10,7 @@ function reverse(str) {
     // return str.split('').reduce((acc, b) => {
     //     return b + acc;
     // }, '');
+    debugger;
     return str.split('').reduce((acc,b) => b+acc, '');
 
     // let reversed = '';
@@ -19,5 +20,7 @@ function reverse(str) {
     // return reversed;
 
 }
+
+reverse('abc');
 
 module.exports = reverse;
