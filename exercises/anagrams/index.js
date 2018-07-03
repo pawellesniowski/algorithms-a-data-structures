@@ -8,6 +8,16 @@
 //   anagrams('RAIL! SAFETY!', 'fairy tales') --> True
 //   anagrams('Hi there', 'Bye there') --> False
 
-function anagrams(stringA, stringB) {}
+function anagrams(stringA, stringB) {
+     return toBabcia(stringA) === toBabcia(stringB);
+}
 
+function toBabcia(string) {
+    return string
+        .toLowerCase()
+        .replace(/[^\w]/g, '')
+        .split('')
+        .sort()
+        .join('');
+}
 module.exports = anagrams;
