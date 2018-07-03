@@ -22,12 +22,25 @@ function chunk(array, size) {
     // return chunked;
 
     // Solution 2:
-    let chunked = [];
-    for (let i = 0; i < array.length; i += size) {
-        let chunk = array.slice(i, i+size);
-        chunked.push(chunk);
+    // let chunked = [];
+    // for (let i = 0; i < array.length; i += size) {
+    //     let chunk = array.slice(i, i+size);
+    //     chunked.push(chunk);
+    // }
+    // return chunked;
+
+    // solution 3:
+    const chunked = [];
+    let index = 0;
+
+    while(index<array.length) {
+        chunked.push(array.slice(index, index+size));
+        index+=size;
     }
+
     return chunked;
+
+
 
 }
 
