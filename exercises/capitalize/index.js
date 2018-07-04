@@ -9,7 +9,6 @@
 
 function capitalize(str) {
     const arrOfWords = str.split(" ");
-    console.log('arr of strings ; ', arrOfWords);
     let sentence = '';
     for (let word of arrOfWords) {
         const w = word.slice(0,1).toUpperCase();
